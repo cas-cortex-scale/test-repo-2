@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "data" {
-  # bucket is public
+  # bucket is public 1
   # bucket is not encrypted
   # bucket does not have access logs
   # bucket does not have versioning
@@ -9,7 +9,7 @@ resource "aws_s3_bucket" "data" {
     Name        = "${local.resource_prefix.value}-data"
     Environment = local.resource_prefix.value
     }, {
-    git_commit           = "4d57f83ca4d3a78a44fb36d1dcf0d23983fa44f5"
+    git_commit           = "4d57f83ca4d3a78a44fb36d1dcf0d23983fa44f52"
     git_file             = "terraform/aws/s3.tf"
     git_last_modified_at = "2022-05-18 07:08:06"
     git_last_modified_by = "nimrod@bridgecrew.io"
